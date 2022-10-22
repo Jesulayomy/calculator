@@ -11,41 +11,44 @@
 This progam functions as a calculator and performs the popular calculator arithmetic operations, 
 as well as a few advanced ones.
 ```
-### Input
+### Input Rules
 To input information, follow these rules.
 - Do not enter more than the required amount of data.
+:x:
 ```commandline
 Enter a single digit number:
-25 :x:
-5 :white_check_mark:
+25
+5
+```
+:white_check_mark:
+```commandline
+Enter a single digit number:
+7
 ```
 - A different data type than is needed is not allowed. (i.e. a character in an operation that requires numbers)
+:x:
 ```commandline
 Input a number to find it's square root:
 a
-@$#(&^@%*&@^&(@
 ```
 
 ### Functions :computer:
 >- [addition.c](addition.c):
-	A function that adds two numbers.
+ A function that adds two numbers.
 >- [division.c](division.c):
-	A function that divides two numbers.
+ A function that divides two numbers.
 >- [multiplication.c](multiplication.c):
-	A function that multiplies two numbers.
+ A function that multiplies two numbers.
 >- [subtraction.c](subtraction.c):
-	A function that subtracts a number from another.
+ A function that subtracts a number from another.
+>- [factorial.c](factorial.c):
+ A function that finds the factorial of a number.
+>- [powers.c](powers.c):
+ A function that finds the result of a number raised to the power of another.
 >- [silmultaneous.c](silmultaneous.c):
-	A function that solves a silmultaneous equation. (need a way to collect output)
+ A function that solves a silmultaneous equation. (need a way to collect output)
 >- [quadratic.c](quadratic.c):
-	A function that solves a quadratic equation. (also needs a way to collect output)
-
-
-
-
-
-
-
+ A function that solves a quadratic equation. (also needs a way to collect output)
 
 ```commandline
 Remember to make it collect input, and loop the exit and options. Also find a way to collect and store two return values.
