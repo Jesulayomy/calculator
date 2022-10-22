@@ -8,14 +8,16 @@
 
 ## [Calculator](calc.c) :desktop_computer:
 ```command line
-This progam functions as a calculator and performs the popular calculator arithmetic operations, as well as a few advanced ones.
+This progam functions as a calculator and performs the popular calculator arithmetic operations, 
+as well as a few advanced ones.
 ```
 ### Input
 To input information, follow these rules.
 - Do not enter more than the required amount of data.
 ```commandline
 Enter a single digit number:
-25
+25 :x:
+5 :white_check_mark:
 ```
 - A different data type than is needed is not allowed. (i.e. a character in an operation that requires numbers)
 ```commandline
