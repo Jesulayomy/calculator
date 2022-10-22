@@ -7,6 +7,6 @@ float div(float, float);
 float add(float, float);
 float sub(float, float);
 float mod(float, float);
-float root(float, float);
+float root(float);
 
 #endif

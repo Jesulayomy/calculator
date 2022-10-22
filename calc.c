@@ -7,12 +7,16 @@
  */
 int main(void)
 {
-
 	printf("C Calculator\n");
+	float a = 3, b = 4;
+	float product = mul(a, b);
+	a = 22, b = 7;
+	float division = div(a, b);
+	float rt = root(121);
+	float sum1 = add(a, b);
+	float diff1 = sub(a, b);
 
-	float product = mul(3, 4), division = div(22, 7);
-
-	printf("Product is %f\n, Division is %.2f\n", product, division);
+	printf("Product is %f\nDivision is %.2f\n", product, division);
 
 	return (0);
 }
