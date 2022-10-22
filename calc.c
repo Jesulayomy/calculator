@@ -15,6 +15,7 @@ int main(void)
 	float rt = root(121);
 	float sum1 = add(a, b);
 	float diff1 = sub(a, b);
+	float fact1 = fact(a);
 
 	printf("Product is %f\nDivision is %.2f\n", product, division);
 

@@ -8,5 +8,6 @@ float add(float, float);
 float sub(float, float);
 float mod(float, float);
 float root(float);
+float fact(float);
 
 #endif
