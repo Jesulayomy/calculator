@@ -12,11 +12,11 @@ This progam functions as a calculator and performs the popular calculator arithm
 as well as a few advanced ones.
 ```
 
-![table.png](table.png)
+![Table showing all operations of the calculator](operations.png)
 
 
 ### Input Rules
-To input information, follow these rules.
+##### To input information, follow these rules.
 - Do not enter more than the required amount of data.
 :x:
 ```commandline
