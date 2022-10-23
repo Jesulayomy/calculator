@@ -48,6 +48,7 @@ Enter three numbers...
 67
 1
 ```
+- When a value is not specified, the last value stored in memory is provided. This may lead to unexpected results.
 
 ### Functions :computer:
 >- [addition.c](addition.c):
