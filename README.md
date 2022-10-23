@@ -11,6 +11,10 @@
 This progam functions as a calculator and performs the popular calculator arithmetic operations, 
 as well as a few advanced ones.
 ```
+
+![table.png](table.png)
+
+
 ### Input Rules
 To input information, follow these rules.
 - Do not enter more than the required amount of data.
@@ -20,16 +24,30 @@ Enter a single digit number:
 25
 5
 ```
-:white_check_mark:
+ :white_check_mark:
 ```commandline
 Enter a single digit number:
 7
 ```
-- A different data type than is needed is not allowed. (i.e. a character in an operation that requires numbers)
-:x:
+- Do nor use a wrong data type.
+ :x:
 ```commandline
 Input a number to find it's square root:
 a
+```
+- Operations that require multiple input can be seprated with a space or entered one after the other.
+ :white_check_mark:
+```commandline
+Enter three nunbers...
+12 67 1
+```
+
+:white_check_mark:
+```commandline
+Enter three numbers...
+12
+67
+1
 ```
 
 ### Functions :computer:
