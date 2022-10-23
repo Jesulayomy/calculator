@@ -18,7 +18,7 @@ as well as a few advanced ones.
 ### Input Rules
 ##### To input information, follow these rules.
 - Do not enter more than the required amount of data.
-:x:
+ :x:
 ```commandline
 Enter a single digit number:
 25
@@ -41,8 +41,7 @@ a
 Enter three nunbers...
 12 67 1
 ```
-
-:white_check_mark:
+ :white_check_mark:
 ```commandline
 Enter three numbers...
 12
