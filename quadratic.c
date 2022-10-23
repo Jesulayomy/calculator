@@ -12,7 +12,7 @@
  */
 float quad(float a, float b, float c)
 {
-	float disc2, disc, root, left, right, done1, done2;
+	float disc, root, left, right, done1, done2, n;
 	disc = ((b * b) - (4 * a * c));
 
 	if (disc < 0)
@@ -21,7 +21,7 @@ float quad(float a, float b, float c)
 		printf("Equation: (%.2f)x*x + (%.2f)x + (%.2f) = 0\n", a, b, c);
 		printf("The Discriminant is: %.2f\n", disc);
 		disc = -disc;
-		float n = disc;
+		n = disc;
 		while ((disc - (n / disc)) > 0.00001)
 		{
 			disc = ((disc + (n / disc)) / 2);
@@ -37,7 +37,7 @@ float quad(float a, float b, float c)
 	{
 		printf("Equation: (%.2f)x*x + (%.2f)x + (%.2f) = 0\n", a, b, c);
 		printf("The Discriminant is: %.2f\n", disc);
-		float n = disc;
+		n = disc;
 
 		while ((disc - (n / disc)) > 0.00001)
 		{

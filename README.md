@@ -70,7 +70,7 @@ Enter three numbers...
 ## :octocat: Undocumented Features :octocat:
 ![feature](feature.jpeg)
 >- Repetition in while loop
- (scanf, printf, last else statements)
+ (scanf, printf, last else statements){resolved}
 
 ```commandline
 Remember to make it collect input(done), 
@@ -78,4 +78,5 @@ and loop the exit and options(done, has extra features).
 Also find a way to collect and store two return value
 -s(pending).add last result (done, doesnt work for 
 quadratic and simultaneous equations yet)
+x.sh for compiling faster
 ```
