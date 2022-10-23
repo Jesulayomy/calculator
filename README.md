@@ -68,6 +68,15 @@ Enter three numbers...
 >- [quadratic.c](quadratic.c):
  A function that solves a quadratic equation. (also needs a way to collect output)
 
+## :octocat: Undocumented Features :octocat:
+![feature](feature.jpeg)
+>- Repetition in while loop
+ (scanf, printf, last else statements)
+
 ```commandline
-Remember to make it collect input, and loop the exit and options. Also find a way to collect and store two return values.
+Remember to make it collect input(done), 
+and loop the exit and options(done, has extra features). 
+Also find a way to collect and store two return value
+-s(pending).add last result (done, doesnt work for 
+quadratic and simultaneous equations yet)
 ```
