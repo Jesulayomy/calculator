@@ -6,9 +6,10 @@ float mul(float, float);
 float div(float, float);
 float add(float, float);
 float sub(float, float);
-float mod(float, float);
 float root(float);
 float fact(float);
 float powr(float, int);
+float simu(float, float, float, float, float, float);
+float quad(float, float, float);
 
 #endif

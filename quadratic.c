@@ -6,7 +6,7 @@
  * @b: - for b
  * @c: - for c
  *
- * This code collects values of a quadratic equation and evaluates it works for all equations now
+ * This code collects values of a quadratic equation and evaluates it works for imaginary roots now
  *
  * Return: done1 and done2 as values for x1 and x2
  */
