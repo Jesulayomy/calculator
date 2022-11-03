@@ -71,9 +71,11 @@ Enter three numbers...
 >- [powers.c](powers.c):
  A function that finds the result of a number raised to the power of another.
 >- [silmultaneous.c](silmultaneous.c):
- A function that solves a silmultaneous equation. (need a way to collect output)
+ A function that solves a silmultaneous equation.
 >- [quadratic.c](quadratic.c):
- A function that solves a quadratic equation. (also needs a way to collect output)
+ A function that solves a quadratic equation.
+>- [converter.c](converter.c):
+ Three functions that together convert from one base to another. (Only works for base 1-10)
 
 ## :octocat: Undocumented Features :octocat:
 ![feature](feature.jpeg)
