@@ -14,9 +14,9 @@ float root(float);
 float fact(float);
 float powr(float, int);
 float simu(float, float, float, float, float, float);
-int convert_to_d(int n, int b);
-int convert(int n, int b, int d);
+void convert(int, int, int);
 float quad(float, float, float);
-int to_dest(int in_dec, int d);
+void to_dest(int, int, int, int);
+int convert_to_dec(int, int);
 
 #endif

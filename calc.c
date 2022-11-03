@@ -9,6 +9,7 @@ int main(void)
 {
 	/* Declaring varables that can be used in the calculator, and inserted into functions. */
 	float a, b, c, d, e, f, h;
+	int j, k, l;
 	char op = 'h';
 
 	printf("A Calculator written in C\n");
@@ -23,7 +24,8 @@ int main(void)
 			"6 - (f) - Factorial\n"
 			"7 - (r) - Root\n"
 			"8 - (q) - Quadratic\n"
-			"9 - (l) - Simultaneous\n");
+			"9 - (l) - Simultaneous\n"
+			"10 - (c) - Number base conversion\n");
 		printf("Enter an operation\n");
 		scanf("%c", &op);
 
@@ -90,6 +92,13 @@ int main(void)
 			printf("Enter coefficients of the simultaneous equation\n");
 			scanf("%f %f %f %f %f %f", &a, &b, &c, &d, &e, &f);
 			simu(a, b, c, d, e, f);
+			printf("\nEnter a new operation\n");
+		}
+		else if (op == 'c')
+		{
+			printf("Enter the number, its current base and the destination base\n");
+			scanf("%d %d %d", &j, &k, &l);
+			convert(j, k, l);
 			printf("\nEnter a new operation\n");
 		}
 		else if (op == 'h')
