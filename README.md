@@ -88,5 +88,5 @@ Enter three numbers...
 - Also find a way to collect and store two return values (pending)
 - Add last result (done, doesnt work for quadratic and simultaneous equations yet)
 - x.sh for compiling faster
-- Nothing to see here
+- Play around with Github actions
 ```
