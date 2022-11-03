@@ -54,7 +54,7 @@ int main(void)
 		{
 			printf("Enter two numbers to be divided\n");
 			scanf("%f %f", &a, &b);
-			h = div(a, b);
+			h = divi(a, b);
 			printf("\nEnter a new operation\n");
 		}
 		else if (op == 'p')

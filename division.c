@@ -8,7 +8,7 @@
  * Return: result of the operation
  */
 
-float div(float a, float b)
+float divi(float a, float b)
 {
 	float c;
 	c = a / b;
