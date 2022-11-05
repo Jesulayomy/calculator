@@ -1,6 +1,6 @@
 #	Calculator made in C
 
-![Github commit activity](https://img.shields.io/github/commit-activity/w/Jesulayomy/calculator?style=plastic) ![Github repository size](https://img.shields.io/github/repo-size/Jesulayomy/calculator?style=plastic)
+![Github commit activity](https://img.shields.io/github/commit-activity/w/Jesulayomy/calculator?style=plastic) ![Github repository size](https://img.shields.io/github/repo-size/Jesulayomy/calculator?style=plastic) [![C/C++ CI](https://github.com/Jesulayomy/calculator/actions/workflows/c-make.yml/badge.svg)](https://github.com/Jesulayomy/calculator/actions/workflows/c-make.yml)
 
 ### Libraries :scroll:
 - stdio.h
