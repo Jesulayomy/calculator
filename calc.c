@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 			"9 - (l) - Simultaneous\n"
 			"10 - (c) - Number base conversion\n");
 
-	while (op != 'x')
+	do
 	{
 		printf("\nEnter an operation\n");
 		scanf("%c", &op);
@@ -92,6 +92,7 @@ int main(int argc, char *argv[])
 			return (0);
 		}
 	}
+	while (op != 'x');
 
 	return (0);
 }
