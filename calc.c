@@ -1,5 +1,7 @@
 #include "main.h"
 
+int check(int arg, char *s);
+
 /**
  * main - The body of the calculator
  *
@@ -10,7 +12,7 @@ int main(int argc, char *argv[])
 
 	/* Declaring varables that can be used in the calculator, and inserted into functions. */
 	float res, prev, prev_mul, num;
-	int i, c;
+	int i, c, ch;
 
 	prev = 0;
 	prev_mul = 1;
@@ -23,17 +25,16 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 	
-	if (argc == 2)
-	{
-		printf("No numbers passed to calculate\n");
-
-		return (1);
-	}
 
 	c = strcmp(argv[1], "add");
 
 	if (c == 0)
 	{
+		ch = check(argc, argv[1]);
+		
+		if (ch == 1)
+			return (1);
+
 		for (i = 2; i < argc; i++)
 		{
 			num = atof(argv[i]);
@@ -52,6 +53,11 @@ int main(int argc, char *argv[])
 
 	if (c == 0)
 	{
+		ch = check(argc, argv[1]);
+
+		if (ch == 1)
+			return (1);
+
 		res = sub(atof(argv[2]), atof(argv[3]));
 		printf("The result of the subtraction is: %.2f\n", res);
 
@@ -62,6 +68,11 @@ int main(int argc, char *argv[])
 
 	if (c == 0)
 	{
+		ch = check(argc, argv[1]);
+
+		if (ch == 1)
+			return (1);
+
 		for ( i = 2; i < argc; i++)
 		{
 			num = atof(argv[i]);
@@ -84,6 +95,11 @@ int main(int argc, char *argv[])
 
 	if (c == 0)
 	{
+		ch = check(argc, argv[1]);
+
+		if (ch == 1)
+			return (1);
+
 		res = divi(atof(argv[2]), atof(argv[3]));
 		printf("The result of the division is: %.2f\n", res);
 
@@ -97,4 +113,17 @@ int main(int argc, char *argv[])
 			"Multiplication (multiply)\n"
 			"Division (divide)\n");
 
+}
+
+int check(int arg, char *s)
+{
+	if (arg == 2)
+	{
+		printf("Error: No numbers passed to %s function\n", s);
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }
