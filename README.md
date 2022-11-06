@@ -81,6 +81,7 @@ Enter three numbers...
 ![feature](feature.jpeg)
 >- Repetition in while loop
  (scanf, printf, last else statements){resolved}
+>- Default message works always?
 
 ```commandline
 - Collect input(done), 
@@ -88,5 +89,5 @@ Enter three numbers...
 - Also find a way to collect and store two return values (pending)
 - Add last result (done, doesnt work for quadratic and simultaneous equations yet)
 - x.sh for compiling faster
-- Play around with Github actions
+- Github actions
 ```
