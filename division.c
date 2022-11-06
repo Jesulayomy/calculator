@@ -13,7 +13,6 @@ float divi(float a, float b)
 	float result;
 
 	result = a / b;
-	printf("The result of a divided by b is: (a / b) = %.2f \n", result);
 
 	return (result);
  }
