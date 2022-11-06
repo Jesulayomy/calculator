@@ -5,6 +5,7 @@
 #include <math.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <string.h>
 
 float mul(float, float);
 float divi(float, float);

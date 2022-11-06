@@ -10,10 +10,9 @@
 
 float add(float a, float b)
 {
-        float c;
-        c = a + b;
+        float sum;
 
-        printf("The sum of %.2f and %.2f is: (a + b) = %.2f \n", a, b, c);
+	sum = a + b;
 
-        return (c);
+        return (sum);
 }
