@@ -14,7 +14,7 @@ float add(float, float);
 float sub(float, float);
 float root(float);
 float fact(float);
-float powr(float, int);
+float _pow(float, int);
 float simu(float, float, float, float, float, float);
 void convert(int, int, int);
 float quad(float, float, float);

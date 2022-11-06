@@ -89,6 +89,8 @@ int main(int argc, char *argv[])
 		}
 
 		printf("The result of the multiplication is: %.2f\n", res);
+
+		return (0);
 	}
 
 	c = strcmp(argv[1], "divide");
@@ -106,15 +108,57 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
+	c = strcmp(argv[1], "factorial");
+
+	if (c == 0)
+	{
+		ch = check(argc, argv[1]);
+
+		if (ch == 1)
+			return (1);
+
+		for (i = 2; i < argc; i++)
+		{
+			res = fact(atof(argv[i]));
+			printf("The factorial of %.2f is %.2f\n", atof(argv[i]), res);
+		}
+
+		return (0);
+	}
+
+	c = strcmp(argv[1], "power");
+
+	if (c == 0)
+	{
+		ch = check(argc, argv[1]);
+
+		if (ch == 1)
+			return (1);
+
+		res = _pow(atof(argv[2]), atoi(argv[3]));
+		printf("%.2f raised to the power of %d is %.2f\n", atof(argv[2]), atoi(argv[3]), res);
+
+		return (0);
+	}
+
 	printf("Error: Invalid function to calulate!\n"
 			"Available functions: Name and how to call it in brackets\n\n"
 			"Addition (add)\n"
 			"Subtraction (subtract)\n"
 			"Multiplication (multiply)\n"
-			"Division (divide)\n");
+			"Division (divide)\n"
+			"Factorial (factorial)\n"
+			"Power (power)\n");
 
 }
 
+/**
+ * check - checks if arg is equal to 2
+ * @arg: arg to check
+ * @s: function name
+ *
+ * Return: 1 if arg is 2 and 0 otherwise
+ */
 int check(int arg, char *s)
 {
 	if (arg == 2)

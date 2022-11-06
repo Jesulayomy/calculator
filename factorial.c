@@ -13,7 +13,6 @@ float fact(float a)
 	{
 		f *= a;
 	}
-	printf("%.0f is the factorial of %.0f\n", f, m);
 
 	return (f);
 }

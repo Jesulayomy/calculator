@@ -5,7 +5,7 @@
  *
  * Return: the value of n^m when successful
  */
-float powr(float a, int b)
+float _pow(float a, int b)
 {
         float f, m = b;
 
@@ -13,7 +13,5 @@ float powr(float a, int b)
         {
                 f *= a;
         }
-        printf("%.0f is the value of (%.0f ^ %.0f)\n", f, a, m);
-
         return (f);
 }
