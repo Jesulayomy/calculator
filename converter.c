@@ -1,5 +1,5 @@
 #include "main.h"
-#include <math.h>
+
 /**
  * convert - converts a number from one abse to another
  * bases over 10 are not implemented yet. conversion to dest in progress
