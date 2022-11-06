@@ -5,8 +5,9 @@
  *
  * Return: 0 if compiled successfully
  */
-int main(void)
+int main(int argc, char *argv[])
 {
+
 	/* Declaring varables that can be used in the calculator, and inserted into functions. */
 	float a, b, c, d, e, f, h;
 	int j, k, l;
@@ -31,80 +32,75 @@ int main(void)
 
 	for (; op != 'x';)
 	{
-		if (op == 'a')
+		switch(op)
 		{
+			case 'a':
 			printf("Enter two numbers to be added\n");
 			scanf("%f %f", &a, &b);
 			h = add(a, b);
 			printf("\nEnter a new operation\n");
-		}
-		else if (op == 's')
-		{
+			break;
+			case 's':
 			printf("Enter two numbers to be subtracted\n");
 			scanf("%f %f", &a, &b);
 			h = sub(a, b);
 			printf("\nEnter a new operation\n");
-		}
-		else if (op == 'm')
-		{
+			break;
+			case 'm':
 			printf("Enter two numbers to be multiplied\n");
 			scanf("%f %f", &a, &b);
 			h = mul(a, b);
 			printf("\nEnter a new operation\n");
-		}
-		else if (op == 'd')
-		{
+			break;
+			case 'd':
 			printf("Enter two numbers to be divided\n");
 			scanf("%f %f", &a, &b);
 			h = divi(a, b);
 			printf("\nEnter a new operation\n");
-		}
-		else if (op == 'p')
-		{
+			break;
+			case 'p':
 			printf("Enter two numbers to find a to the power of b\n");
 			scanf("%f %f", &a, &b);
 			h = powr(a, b);
 			printf("\nEnter a new operation\n");
-		}
-		else if (op == 'f')
-		{
+			break;
+			case 'f':
 			printf("Enter a number to find its factorial\n");
 			scanf("%f", &a);
 			h = fact(a);
 			printf("\nEnter a new operation\n");
-		}
-		else if (op == 'r')
-		{
+			break;
+			case 'r':
 			printf("Enter a number to find its square root\n");
 			scanf("%f", &a);
 			h = root(a);
 			printf("\nEnter a new operation\n");
-		}
-		else if (op == 'q')
-		{
+			break;
+			case 'q':
 			printf("Enter coefficients of x2, x1 and x0\n");
 			scanf("%f %f %f", &a, &b, &c);
 			quad(a, b, c);
 			printf("\nEnter a new operation\n");
-		}
-		else if (op == 'l')
-		{
+			break;
+			case 'l':
 			printf("Enter coefficients of the simultaneous equation\n");
 			scanf("%f %f %f %f %f %f", &a, &b, &c, &d, &e, &f);
 			simu(a, b, c, d, e, f);
 			printf("\nEnter a new operation\n");
-		}
-		else if (op == 'c')
-		{
+			break;
+			case 'c':
 			printf("Enter the number, its current base and the destination base\n");
 			scanf("%d %d %d", &j, &k, &l);
 			convert(j, k, l);
 			printf("\nEnter a new operation\n");
-		}
-		else if (op == 'h')
-		{
+			break;
+			case 'h':
 			printf("%.2f was the last result\n", h);
 			printf("\nEnter a new operation\n");
+			break;
+			default:
+			printf("Invalid Operation, Retry\n");
+			break;
 		}
 
 			scanf("%c", &op);
