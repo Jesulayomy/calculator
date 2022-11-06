@@ -11,9 +11,8 @@
 float sub(float a, float b)
 {
         float c;
-        c = a - b;
 
-        printf("The difference between %.2f and %.2f is: (a - b) = %.2f \n", a, b, c);
+        c = a - b;
 
         return (c);
 }

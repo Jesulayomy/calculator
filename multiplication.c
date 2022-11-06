@@ -10,9 +10,9 @@
 
 float mul(float a, float b)
 {
-	float c;
-	c = a * b;
-	printf("The product of a and b is: (a * b) = %.2f \n", c);
+	float res = 0;
 
-	return (c);
+	res = a * b;
+
+	return (res);
 }

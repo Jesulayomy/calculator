@@ -10,9 +10,9 @@
 
 float divi(float a, float b)
 {
-	float c;
-	c = a / b;
-	printf("The result of a divided by b is: (a / b) = %.2f \n", c);
+	float result;
 
-	return (c);
+	result = a / b;
+
+	return (result);
  }

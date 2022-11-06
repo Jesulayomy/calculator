@@ -9,90 +9,92 @@ int main(int argc, char *argv[])
 {
 
 	/* Declaring varables that can be used in the calculator, and inserted into functions. */
-	float a, b, c, d, e, f, h;
-	int j, k, l;
-	char op;
+	float res, prev, prev_mul, num;
+	int i, c;
 
-	printf("A Calculator written in C\n");
-	printf("Enter a letter to perform an operation\n"
-			"Operations:\n"
-			"0 - (x) - Exit\n"
-			"1 - (a) - Addition\n"
-			"2 - (s) - Subtraction\n"
-			"3 - (m) - Multiplication\n"
-			"4 - (d) - Division\n"
-			"5 - (p) - Power\n"
-			"6 - (f) - Factorial\n"
-			"7 - (r) - Root\n"
-			"8 - (q) - Quadratic\n"
-			"9 - (l) - Simultaneous\n"
-			"10 - (c) - Number base conversion\n");
+	prev = 0;
+	prev_mul = 1;
 
-	do
+	if (argc == 1)
 	{
-		printf("\nEnter an operation\n");
-		scanf("%c", &op);
+		printf("No calculation passed as arguments\n");
+		printf("Usage: ./calculator <<function>> <<arguments>>\n");
 
-		switch (op)
-		{
-			case 'a':
-			printf("Enter two numbers to be added\n");
-			scanf("%f %f", &a, &b);
-			h = add(a, b);
-			break;
-			case 's':
-			printf("Enter two numbers to be subtracted\n");
-			scanf("%f %f", &a, &b);
-			h = sub(a, b);
-			break;
-			case 'm':
-			printf("Enter two numbers to be multiplied\n");
-			scanf("%f %f", &a, &b);
-			h = mul(a, b);
-			break;
-			case 'd':
-			printf("Enter two numbers to be divided\n");
-			scanf("%f %f", &a, &b);
-			h = divi(a, b);
-			break;
-			case 'p':
-			printf("Enter two numbers to find a to the power of b\n");
-			scanf("%f %f", &a, &b);
-			h = powr(a, b);
-			break;
-			case 'f':
-			printf("Enter a number to find its factorial\n");
-			scanf("%f", &a);
-			h = fact(a);
-			break;
-			case 'r':
-			printf("Enter a number to find its square root\n");
-			scanf("%f", &a);
-			h = root(a);
-			break;
-			case 'q':
-			printf("Enter coefficients of x2, x1 and x0\n");
-			scanf("%f %f %f", &a, &b, &c);
-			quad(a, b, c);
-			break;
-			case 'l':
-			printf("Enter coefficients of the simultaneous equation\n");
-			scanf("%f %f %f %f %f %f", &a, &b, &c, &d, &e, &f);
-			simu(a, b, c, d, e, f);
-			break;
-			case 'c':
-			printf("Enter the number, its current base and the destination base\n");
-			scanf("%d %d %d", &j, &k, &l);
-			convert(j, k, l);
-			break;
-			case 'h':
-			printf("%.2f was the last result\n", h);
-			break;
-			case 'x':
-			return (0);
-		}
+		return (1);
 	}
-	while (op != 'x');
+	
+	if (argc == 2)
+	{
+		printf("No numbers passed to calculate\n");
 
-	return (0);
+		return (1);
+	}
+
+	c = strcmp(argv[1], "add");
+
+	if (c == 0)
+	{
+		for (i = 2; i < argc; i++)
+		{
+			num = atof(argv[i]);
+
+			res = add(prev, num);
+
+			prev = res;
+		}
+
+		printf("The result of the addition is: %.2f\n", res);
+
+		return (0);
+	}
+
+	c = strcmp(argv[1], "subtract");
+
+	if (c == 0)
+	{
+		res = sub(atof(argv[2]), atof(argv[3]));
+		printf("The result of the subtraction is: %.2f\n", res);
+
+		return (0);
+	}
+
+	c = strcmp(argv[1], "multiply");
+
+	if (c == 0)
+	{
+		for ( i = 2; i < argc; i++)
+		{
+			num = atof(argv[i]);
+
+			res = mul(prev_mul, num);
+
+			if (res > FLT_MAX)
+			{
+				printf("Exceeded maximum result value\n");
+				return (1);
+			}
+
+			prev_mul = res;
+		}
+
+		printf("The result of the multiplication is: %.2f\n", res);
+	}
+
+	c = strcmp(argv[1], "divide");
+
+	if (c == 0)
+	{
+		res = divi(atof(argv[2]), atof(argv[3]));
+		printf("The result of the division is: %.2f\n", res);
+
+		return (0);
+	}
+
+	printf("Error: Invalid function to calulate!\n"
+			"Available functions: Name and how to call it in brackets\n\n"
+			"Addition (add)\n"
+			"Subtraction (subtract)\n"
+			"Multiplication (multiply)\n"
+			"Division (divide)\n");
+
 }
