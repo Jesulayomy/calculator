@@ -12,10 +12,7 @@ float root(float a)
 	float s = a;
 
 	while ((s - (a / s)) > 0.0001)
-	{
 		s = ((s + (a / s)) / 2);
-	}
 
-	printf("The square root of %.2f is %.2f\n", a, s);
 	return (s);
 }

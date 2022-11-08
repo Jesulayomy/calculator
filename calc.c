@@ -9,7 +9,6 @@ int check(int arg, char *s);
  */
 int main(int argc, char *argv[])
 {
-
 	/* Declaring varables that can be used in the calculator, and inserted into functions. */
 	float res, prev, prev_mul, num;
 	int i, c, ch;
@@ -19,12 +18,30 @@ int main(int argc, char *argv[])
 
 	if (argc == 1)
 	{
-		printf("No calculation passed as arguments\n");
-		printf("Usage: ./calculator <<function>> <<arguments>>\n");
+		printf("No operation passed as arguments\n");
+		printf("Usage: ./calculator <<operation>> <<argument(s)>>\n");
 
 		return (1);
 	}
-	
+	/* Check this for printing the menu */
+	c = strcmp(argv[1], "menu");
+	if (c == 0)
+	{
+		printf("To use the calculator, run:\n./calculator <<operation>> <<argument(s)>>\n");
+		printf("Error: Invalid function to calulate!\n"
+			"Available functions: Name and how to call it in brackets\n\n"
+			"Addition (add)\n"
+			"Subtraction (subtract)\n"
+			"Multiplication (multiply)\n"
+			"Division (divide)\n"
+			"Factorial (factorial)\n"
+			"Power (power)\n"
+			"Converting bases (base)\n"
+			"Quadratic (quadratic)\n"
+			"Root (root)\n"
+			"Silmultaneous (simultaneous)\n"
+			);
+	}
 
 	c = strcmp(argv[1], "add");
 
@@ -161,9 +178,9 @@ int main(int argc, char *argv[])
  */
 int check(int arg, char *s)
 {
-	if (arg == 2)
+	if (arg == 2 && s != "menu")
 	{
-		printf("Error: No numbers passed to %s function\n", s);
+		printf("Error: Insufficient values passed to %s function\n", s);
 		return (1);
 	}
 	else

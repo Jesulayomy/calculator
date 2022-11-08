@@ -10,8 +10,7 @@ float _pow(float a, int b)
         float f, m = b;
 
         for (f = 1; b > 0; b--)
-        {
                 f *= a;
-        }
+
         return (f);
 }

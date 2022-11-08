@@ -10,9 +10,7 @@ float fact(float a)
 	float f, m = a;
 
 	for (f = 1; a > 1; a--)
-	{
 		f *= a;
-	}
 
 	return (f);
 }
