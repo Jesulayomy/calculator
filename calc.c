@@ -16,31 +16,36 @@ int main(int argc, char *argv[])
 	prev = 0;
 	prev_mul = 1;
 
+	/* checking for no arguments */
 	if (argc == 1)
 	{
 		printf("No operation passed as arguments\n");
-		printf("Usage: ./calculator <<operation>> <<argument(s)>>\n");
+		printf("Usage: ./calculator <<operation>> <<argument(s)>>\n"
+			"Usage: ./calculator menu\n");
 
 		return (1);
 	}
-	/* Check this for printing the menu */
+
+	/* Printing a menu for help */
 	c = strcmp(argv[1], "menu");
+
 	if (c == 0)
 	{
-		printf("To use the calculator, run:\n./calculator <<operation>> <<argument(s)>>\n");
-		printf("Error: Invalid function to calulate!\n"
-			"Available functions: Name and how to call it in brackets\n\n"
-			"Addition (add)\n"
-			"Subtraction (subtract)\n"
-			"Multiplication (multiply)\n"
-			"Division (divide)\n"
-			"Factorial (factorial)\n"
-			"Power (power)\n"
-			"Converting bases (base)\n"
+		printf("To use the calculator, run:\n"
+			"./calculator <<operation>> <<argument(s)>>\n");
+		printf("Available functions\n"
+			"Addition (add) (a) (b) (c) (...)\n"
+			"Subtraction (subtract) (a) (b) (c) (...)\n"
+			"Multiplication (multiply) (a) (b) (c) (...)\n"
+			"Division (divide) (a) (b) (c) (...)\n"
+			"Factorial (factorial) (a)\n"
+			"Power (power) (a) (b)\n"
+			"Converting bases (base) \n"
 			"Quadratic (quadratic)\n"
 			"Root (root)\n"
 			"Silmultaneous (simultaneous)\n"
 			);
+		return (0);
 	}
 
 	c = strcmp(argv[1], "add");
@@ -75,7 +80,17 @@ int main(int argc, char *argv[])
 		if (ch == 1)
 			return (1);
 
-		res = sub(atof(argv[2]), atof(argv[3]));
+		num = atof(argv[2]);
+		for (i = 2; i < argc; i++)
+		{
+			/* prev = next number, starts as 0 */
+			res = sub(num, prev);
+			num = res;
+			if (argv[i + 1])
+			{
+				prev = atof(argv[i + 1]);
+			}
+		}
 		printf("The result of the subtraction is: %.2f\n", res);
 
 		return (0);
