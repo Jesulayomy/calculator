@@ -19,7 +19,7 @@ float simu(float a, float b, float c, float d, float e, float f)
 {
 	float l1, r1, l2, r2, m1, x, y;	/* These are used to calculate the fractions needed to compute x */
 
-	printf("(%.1f)x + (%.1f)y = %.1f\n(%.1fd)x + (%.1f)e = %.1f\n", a, b, c, d, e, f);
+	printf("(%.1f)x + (%.1f)y = %.1f\n(%.1f)x + (%.1f)y = %.1f\n", a, b, c, d, e, f);
 
 	l2 = ((c * e) / b);
 	r2 = ((a * e) / b);

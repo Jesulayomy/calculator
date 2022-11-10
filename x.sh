@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc calc.c -L. -larithemetic -o calculator
+gcc calc.c -L. -lm -larithmetic -o calculator

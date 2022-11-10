@@ -22,7 +22,7 @@ int convert_to_dec(int n, int b)
 
 	for (p = 0; m / 10 || m > 0; p++)
 	{
-		r = r + ((m % 10) * pow(b, p));
+		r = r + ((m % 10) * _pow(b, p));
 		m = m / 10;
 	}
 
@@ -36,17 +36,17 @@ void to_dest(int n, int in_dec, int b, int d)
 
 	if (d == 10)
 	{
-		printf("%d in base %d is %d in base %d\n", n, b, e, d);
+		printf("(%d)%d = (%d)%d\n", n, b, e, d);
 		return;
 	}
 
 	for (p = 0, r = 0; e / d || e > 0; p++)
 	{
-		r = r + ((e % d) * pow(10, p));
+		r = r + ((e % d) * _pow(10, p));
 		e /= d;
 	}
 
-	printf("%d in base %d is %d in base %d\n", n, b, r, d);
+	printf("(%d)%d = (%d)%d\n", n, b, r, d);
 
 	return;
 }
