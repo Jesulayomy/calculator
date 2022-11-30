@@ -2,10 +2,14 @@
 
 ![GitHub repo file count](https://img.shields.io/github/directory-file-count/Jesulayomy/calculator?style=for-the-badge) ![GitHub repo size](https://img.shields.io/github/repo-size/Jesulayomy/calculator?style=for-the-badge) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/Jesulayomy/calculator?style=for-the-badge) ![GitHub contributors](https://img.shields.io/github/contributors/Jesulayomy/calculator?style=for-the-badge) 
 
+--------------------------------------------------------------------------------
+
 ### Libraries :scroll:
 - stdio.h
 - math.h
 - [main.h](main.h)
+
+-------------------------------------------------------------------------------
 
 ## [Calculator](calc.c) :desktop_computer:
 ```command line
@@ -15,6 +19,9 @@ as well as a few advanced ones.
 ```
 
 ![Table showing all operations of the calculator](operation.png)
+
+--------------------------------------------------------------------------------
+
 ### Running
 >- For ubuntu systems (i.e sandbox or vagrant) run the executeable file
 ```commandline
@@ -50,6 +57,8 @@ It may also be necessary to run full_compile.sh
  $ ./full_compile.sh
 ```
 
+--------------------------------------------------------------------------------
+
 ### Input Rules
 ##### To input information, follow these rules.
 - Do not use a wrong data type.
@@ -63,6 +72,7 @@ a
 ```
 - When a value is not specified as an argument, the program will exit with an error.  
 
+--------------------------------------------------------------------------------
 
 ### Functions :computer:
 >- [addition.c](addition.c):
@@ -92,6 +102,8 @@ a
  Three functions that together convert from one base to another. (Only works for base 1-10)  
  `./calculator base num current_base destination_base`
 
+--------------------------------------------------------------------------------
+
 ## :octocat: Undocumented Features :octocat:
 ![feature](feature.jpeg)
 >- Repetition in while loop
@@ -106,6 +118,8 @@ a
 - Github actions
 ```
 
+--------------------------------------------------------------------------------
+
 <h2>✔Project Owner</h2>
 
 <table>
@@ -115,18 +129,20 @@ a
 </table>
 
 
+--------------------------------------------------------------------------------
+
 <h2>Contributors</h2>
 
 <table>
   <tr>
   <td align="center"><a href="https://github.com/micoliser"><img src="https://avatars.githubusercontent.com/u/108087255?v=4" width="80px;" alt=""/><br /><sub><b>Micoliser</b></sub></a></td>
   </tr>
-</table>
 
-<table>
   <tr>
   <td align="center"><a href="https://github.com/Jesulayomy"><img src="https://avatars.githubusercontent.com/u/113533393?s=96&v=4" width="80px;" alt=""/><br /><sub><b>Jesulayomy</b></sub></a></td>
   </tr>
 </table>
 
+
+--------------------------------------------------------------------------------
 Give a star if you liked this. You can join in the discussions section or contribute by contacting me
