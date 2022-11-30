@@ -14,7 +14,7 @@ some popular calculator arithmetic operations,
 as well as a few advanced ones. 
 ```
 
-![Table showing all operations of the calculator](operation.PNG)
+![Table showing all operations of the calculator](operation.png)
 ### Running
 >- For ubuntu systems (i.e sandbox or vagrant) run the executeable file
 ```commandline
