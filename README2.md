@@ -17,27 +17,28 @@
     <li>Api: <a href="https://iexcloud.io/" alt="iexcloud.io">IEX Cloud</a>
 </ul>
 
-<h2>Installation:</h2>
-<p>The dashboard can be installed by cloning this repository to your terminal</p>
-<p>With Git:</p>
+### Installation:
+The dashboard can be installed by cloning this repository to your terminal
+With Git:
+
 ```commandline
 $ git clone https://github.com/micoliser/REPONAME.git
 ```
 
-<p>Or using wget and unzip:</p>
+Or using wget and unzip:
 ```commandline
 $ wget https://github.com/micoliser/REPONAME/archive/refs/heads/master.zip
 ```
 
-<p>Then unzip the downloaded file</p>
+Then unzip the downloaded file
 ```commandline
 $ unzip master.zip
 ```
 
 ---
 
-<h2>Usage:</h2>
-<p>To use the dashboard, run the command; (Dashboard will be opened Default Browser)</p>
+### Usage:
+To use the dashboard, run the command; (Dashboard will be opened Default Browser)
 ```commandline
 $ cd REPONAME
 $
@@ -47,29 +48,36 @@ $
 
 ---
 
-<h2 align="center">The Dashboard</h2>
+## The Dashboard
 ![New Opened Dashboard in broswer window showing searchbar](images/default_dash.png)
-<p>
 The dashboard is opened after running ```npm start``` from the terminal and
  displays the first 100 stocks by default.
-</p>
-<h4>The Dashboard search bar features</h4>
-<p>
-The dashboard search bar can be used to find a single stock, 
-or multiple stocks seprated by commas (no spaces).<br>
-It supports typing suggestions based on user input (first 50 stocks, completes text on click).<br>
-Displays the first three results of the search.
-</p>
+ 
+#### The Dashboard search bar features
+
+The dashboard search bar can be used to find a single stock,<br>
 ![Search image for single stock](images/single_search.png)
+
+or multiple stocks seprated by commas (no spaces).<br>
 ![Search image for multiple stocks](images/multi_search.png)
+
+It supports typing suggestions based on user input (first 50 stocks, completes text on click).<br>
 ![Search image showing suggestions](images/suggest_search.png)
-<h4>Dashboard Results</h4>
-<p>Dashboard results show the current price, change in price, and percentage change for each stock</p>
+
+
+#### Dashboard Results
+Dashboard results show the current price, change in price, and percentage change for each stock.
+![Search image showing result parameters](images/default_dash.png)
+
+
+Displays the first three results of the search.
+![Search image showing multiple results of stock search](images/default_dash.png)
 
 ---
 
-<section>
-<h3>Bugs</h3>
-<p>Cockroaches, termites and houseflies</p>
-<p>Data takes approximately ten seconds to load. Chack your internet connection if loading persists</p>
-</section>
+#### Bugs
+
+Cockroaches, termites and houseflies<br>
+Data takes approximately ten seconds to load. Chack your internet connection if loading persists.
+
+---
